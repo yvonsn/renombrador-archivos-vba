@@ -18,23 +18,15 @@ Número ausente:        10124
 ```
 
 Tras la comprobación, el usuario puede indicar un número inicial y renumerar automáticamente todos los archivos a partir de ese valor, generando una secuencia correlativa y sin saltos.
-
-<details>
-  <summary>
+<p align="center">
+  <a href="docs/images/02-vista-previa-renumeracion.jpg">
     <img
       src="docs/images/02-vista-previa-renumeracion.jpg"
-      alt="Vista previa de texto añadido"
-      title="Clic para agrandar"
-      width="500"
+      alt="Vista previa de renumeración de archivos"
+      width="550"
     >
-  </summary>
-
-  <img
-    src="docs/images/02-vista-previa-renumeracion.jpg"
-    alt="Vista ampliada de texto añadido"
-    width="100%"
-  >
-</details>
+  </a>
+</p>
 
 Una vez confirmada la operación, la aplicación informa al usuario de que el proceso ha finalizado.
 
@@ -43,7 +35,7 @@ Una vez confirmada la operación, la aplicación informa al usuario de que el pr
     <img
       src="docs/images/03-renumeracion-terminado.png"
       alt="Vista previa de renumeración de archivos"
-      width="500"
+      width="550"
     >
   </a>
 </p>
@@ -64,7 +56,7 @@ Después: 10122_Paco_de_Lucia_Bilbao.jpg
     <img
       src="docs/images/04-agregar-texto.jpg"
       alt="Vista previa de renumeración de archivos"
-      width="500"
+      width="550"
     >
   </a>
 </p>
@@ -88,7 +80,7 @@ Resultado normalizado:
     <img
       src="docs/images/06-capitalizar-nombres.jpg"
       alt="Vista previa de renumeración de archivos"
-      width="500"
+      width="550"
     >
   </a>
 </p>
@@ -120,7 +112,7 @@ Antes de iniciar el proceso, el usuario debía copiar a `RENOMBRADOR` únicament
     <img
       src="docs/images/07-resultado-final.jpg"
       alt="Vista previa de renumeración de archivos"
-      width="500"
+      width="550"
     >
   </a>
 </p>
@@ -157,7 +149,7 @@ La zona central muestra la vista previa de los archivos y los botones inferiores
     <img
       src="docs/images/01-diseno-interfaz.jpg"
       alt="Vista previa de renumeración de archivos"
-      width="500"
+      width="550"
     >
   </a>
 </p>
