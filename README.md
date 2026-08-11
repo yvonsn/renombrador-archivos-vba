@@ -96,7 +96,7 @@ La zona central muestra la vista previa de los archivos y los botones inferiores
 
 | Adición de texto | Normalización de capitalización |
 |---|---|
-| ![Vista previa de texto añadido](docs/images/03-agregar-texto.jpg) | ![Vista previa de capitalización](docs/images/04-capitalizar-nombres.jpg) |
+| ![Vista previa de texto añadido](docs/images/03-agregar-texto.png) | ![Vista previa de capitalización](docs/images/04-capitalizar-nombres.jpg) |
 
 | Confirmación de ejecución | Resultado en la carpeta RENOMBRADOR |
 |---|---|
