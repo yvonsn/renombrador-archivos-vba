@@ -10,7 +10,7 @@ La primera versión funcional se desarrolló en **PowerShell**. Debido a que los
 
 ### 1. Renombrado descriptivo
 
-Permite añadir un texto descriptivo antes del identificador numérico de cada archivo, conservando el número original y su extensión.
+Permite añadir un texto descriptivo después del identificador numérico de cada archivo, conservando el número original y su extensión.
 
 ```text
 Antes:   10122.jpg
