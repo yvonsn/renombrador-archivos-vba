@@ -24,14 +24,22 @@ Tras la comprobación, el usuario puede indicar un número inicial y renumerar a
     <img
       src="docs/images/02-vista-previa-renumeracion.jpg"
       alt="Vista previa de renumeración de archivos"
-      width="400"
+      width="500"
     >
   </a>
 </p>
 
 Una vez confirmada la operación, la aplicación informa al usuario de que el proceso ha finalizado.
 
-![Mensaje de proceso completado](docs/images/03-renumeracion-terminado.png)
+<p align="center">
+  <a href="docs/images/03-renumeracion-terminado.png">
+    <img
+      src="docs/images/03-renumeracion-terminado.png"
+      alt="Vista previa de renumeración de archivos"
+      width="500"
+    >
+  </a>
+</p>
 
 ---
 
@@ -43,8 +51,16 @@ Permite añadir un texto descriptivo después del identificador numérico de cad
 Antes:   10122.jpg
 Después: 10122_Paco_de_Lucia_Bilbao.jpg
 ```
-![Vista previa de texto añadido](docs/images/04-agregar-texto.jpg)
 
+<p align="center">
+  <a href="docs/images/04-agregar-texto.jpg">
+    <img
+      src="docs/images/04-agregar-texto.jpg"
+      alt="Vista previa de renumeración de archivos"
+      width="500"
+    >
+  </a>
+</p>
 ---
 
 ### 3. Normalización de nombres
@@ -59,7 +75,16 @@ Corrige nombres escritos completamente en mayúsculas, en minúsculas o con una 
 Resultado normalizado:
 10122_Paco_de_Lucia_Bilbao.jpg
 ```
-![Vista previa de capitalización](docs/images/06-capitalizar-nombres.jpg)
+
+<p align="center">
+  <a href="docs/images/06-capitalizar-nombres.jpg">
+    <img
+      src="docs/images/06-capitalizar-nombres.jpg"
+      alt="Vista previa de renumeración de archivos"
+      width="500"
+    >
+  </a>
+</p>
 
 ---
 
@@ -83,7 +108,15 @@ La aplicación estaba dirigida a personas sin conocimientos técnicos, por lo qu
 
 Antes de iniciar el proceso, el usuario debía copiar a `RENOMBRADOR` únicamente los archivos que necesitaba modificar. El renombrado, la verificación de secuencias, la renumeración y la normalización se ejecutaban sobre esas copias. Este diseño reducía el riesgo de modificar archivos equivocados, perder información o afectar los datos originales.
 
-![Archivos resultantes en la carpeta RENOMBRADOR](docs/images/07-resultado-final.jpg)
+<p align="center">
+  <a href="docs/images/07-resultado-final.jpg">
+    <img
+      src="docs/images/07-resultado-final.jpg"
+      alt="Vista previa de renumeración de archivos"
+      width="500"
+    >
+  </a>
+</p>
 
 ## Flujo de uso
 
@@ -112,7 +145,15 @@ La versión en Excel VBA utiliza un formulario sencillo pensado para personas si
 
 La zona central muestra la vista previa de los archivos y los botones inferiores permiten revisar los cambios, ejecutarlos o cerrar la herramienta.
 
-![Diseño del formulario en VBA](docs/images/01-diseno-interfaz.jpg)
+<p align="center">
+  <a href="docs/images/01-diseno-interfaz.jpg">
+    <img
+      src="docs/images/01-diseno-interfaz.jpg"
+      alt="Vista previa de renumeración de archivos"
+      width="500"
+    >
+  </a>
+</p>
 
 ## Competencias aplicadas
 
