@@ -8,17 +8,7 @@ La primera versión funcional se desarrolló en **PowerShell**. Debido a que los
 
 ## Funcionalidades
 
-### 1. Renombrado descriptivo
-
-Permite añadir un texto descriptivo después del identificador numérico de cada archivo, conservando el número original y su extensión.
-
-```text
-Antes:   10122.jpg
-Después: 10122_Paco_de_Lucia_Bilbao.jpg
-```
-![Vista previa de texto añadido](docs/images/02-vista-previa-renumeracion.jpg)
-
-### 2. Verificación y renumeración de secuencias
+### 1. Verificación y renumeración de secuencias
 
 Analiza los identificadores numéricos de una carpeta y detecta posibles saltos en la secuencia.
 
@@ -29,9 +19,25 @@ Número ausente:        10124
 
 Tras la comprobación, el usuario puede indicar un número inicial y renumerar automáticamente todos los archivos a partir de ese valor, generando una secuencia correlativa y sin saltos.
 
-![Vista previa de la renumeración](docs/images/03-agregar-texto.png)
+![Vista previa de la renumeración](docs/images/02-vista-previa-renumeracion.jpg)
 
 Una vez confirmada la operación, la aplicación informa al usuario de que el proceso ha finalizado.
+
+![Mensaje de proceso completado](docs/images/03-renumeracion-terminado.png)
+
+---
+
+### 2. Renombrado descriptivo
+
+Permite añadir un texto descriptivo después del identificador numérico de cada archivo, conservando el número original y su extensión.
+
+```text
+Antes:   10122.jpg
+Después: 10122_Paco_de_Lucia_Bilbao.jpg
+```
+![Vista previa de texto añadido](docs/images/04-agregar-texto.jpg)
+
+---
 
 ### 3. Normalización de nombres
 
@@ -45,7 +51,9 @@ Corrige nombres escritos completamente en mayúsculas, en minúsculas o con una 
 Resultado normalizado:
 10122_Paco_de_Lucia_Bilbao.jpg
 ```
-![Vista previa de capitalización](docs/images/04-capitalizar-nombres.jpg)
+![Vista previa de capitalización](docs/images/06-capitalizar-nombres.jpg)
+
+---
 
 ## Medidas de seguridad
 
@@ -67,7 +75,7 @@ La aplicación estaba dirigida a personas sin conocimientos técnicos, por lo qu
 
 Antes de iniciar el proceso, el usuario debía copiar a `RENOMBRADOR` únicamente los archivos que necesitaba modificar. El renombrado, la verificación de secuencias, la renumeración y la normalización se ejecutaban sobre esas copias. Este diseño reducía el riesgo de modificar archivos equivocados, perder información o afectar los datos originales.
 
-![Archivos resultantes en la carpeta RENOMBRADOR](docs/images/06-resultado-final.jpg)
+![Archivos resultantes en la carpeta RENOMBRADOR](docs/images/07-resultado-final.jpg)
 
 ## Flujo de uso
 
