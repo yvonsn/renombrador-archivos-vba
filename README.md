@@ -26,7 +26,7 @@ Secuencia encontrada: 10122, 10123, 10125
 Número ausente:        10124
 ```
 
-Después de la comprobación, ofrece la posibilidad de renumerar los archivos para obtener una secuencia correlativa y continua.
+Tras la comprobación, el usuario puede indicar un número inicial y renumerar automáticamente todos los archivos a partir de ese valor, generando una secuencia correlativa y sin saltos.
 
 ### 3. Normalización de nombres
 
