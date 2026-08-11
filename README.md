@@ -19,7 +19,13 @@ Número ausente:        10124
 
 Tras la comprobación, el usuario puede indicar un número inicial y renumerar automáticamente todos los archivos a partir de ese valor, generando una secuencia correlativa y sin saltos.
 
-![Vista previa de la renumeración](docs/images/02-vista-previa-renumeracion.jpg)
+<a href="docs/images/03-agregar-texto.jpg">
+  <img
+    src="docs/images/03-agregar-texto.jpg"
+    alt="Vista previa de texto añadido"
+    width="400"
+  >
+</a>
 
 Una vez confirmada la operación, la aplicación informa al usuario de que el proceso ha finalizado.
 
