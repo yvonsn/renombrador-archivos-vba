@@ -113,7 +113,7 @@ Antes de iniciar el proceso, el usuario debía copiar a `RENOMBRADOR` únicament
     <img
       src="docs/images/07-resultado-final.jpg"
       alt="Vista previa de renumeración de archivos"
-      width="550"
+      width="600"
     >
   </a>
 </p>
