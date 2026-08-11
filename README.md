@@ -16,7 +16,7 @@ Permite añadir un texto descriptivo después del identificador numérico de cad
 Antes:   10122.jpg
 Después: 10122_Paco_de_Lucia_Bilbao.jpg
 ```
-![Vista previa de texto añadido](docs/images/03-agregar-texto.jpg)
+![Vista previa de texto añadido](docs/images/03-agregar-texto.png)
 
 ### 2. Verificación y renumeración de secuencias
 
