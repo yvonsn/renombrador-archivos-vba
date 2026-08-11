@@ -14,7 +14,7 @@ Permite añadir un texto descriptivo antes del identificador numérico de cada a
 
 ```text
 Antes:   10122.jpg
-Después: Paco_de_Lucia_Bilbao_10122.jpg
+Después: 10122_Paco_de_Lucia_Bilbao.jpg
 ```
 
 ### 2. Verificación y renumeración de secuencias
@@ -33,12 +33,12 @@ Después de la comprobación, ofrece la posibilidad de renumerar los archivos pa
 Corrige nombres escritos completamente en mayúsculas, en minúsculas o con una combinación irregular, aplicando un criterio uniforme de capitalización.
 
 ```text
-PACO_DE_LUCIA_BILBAO_10122.jpg
-paco_de_lucia_bilbao_10122.jpg
-PaCo_de_LuCia_BILBAO_10122.jpg
+10122_PACO_DE_LUCIA_BILBAO.jpg
+10122_paco_de_lucia_bilbao.jpg
+10122_PaCo_de_LuCia_BILBAO.jpg
 
 Resultado normalizado:
-Paco_de_Lucia_Bilbao_10122.jpg
+10122_Paco_de_Lucia_Bilbao.jpg
 ```
 
 ## Medidas de seguridad
@@ -88,9 +88,19 @@ La versión en Excel VBA utiliza un formulario sencillo pensado para personas si
 
 La zona central muestra la vista previa de los archivos y los botones inferiores permiten revisar los cambios, ejecutarlos o cerrar la herramienta.
 
-![Interfaz del renombrador de archivos](docs/images/renombrador1.jpg)
+## Demostración visual
 
-> Para que la imagen aparezca en GitHub, debe guardarse en el repositorio con la ruta `docs/images/renombrador1.jpg`.
+| Diseño del formulario | Vista previa de renumeración |
+|---|---|
+| ![Diseño del formulario en VBA](docs/images/01-diseno-interfaz.jpg) | ![Vista previa de la renumeración](docs/images/02-vista-previa-renumeracion.jpg) |
+
+| Adición de texto | Normalización de capitalización |
+|---|---|
+| ![Vista previa de texto añadido](docs/images/03-agregar-texto.jpg) | ![Vista previa de capitalización](docs/images/04-capitalizar-nombres.jpg) |
+
+| Confirmación de ejecución | Resultado en la carpeta RENOMBRADOR |
+|---|---|
+| ![Mensaje de proceso completado](docs/images/05-proceso-completado.png) | ![Archivos resultantes en la carpeta RENOMBRADOR](docs/images/06-resultado-final.jpg) |
 
 ## Competencias aplicadas
 
