@@ -31,9 +31,9 @@ Tras la comprobación, el usuario puede indicar un número inicial y renumerar a
 Una vez confirmada la operación, la aplicación informa al usuario de que el proceso ha finalizado.
 
 <p align="center">
-  <a href="docs/images/03-renumeracion-terminado.png">
+  <a href="docs/images/03-renumeracion-terminado.jpg">
     <img
-      src="docs/images/03-renumeracion-terminado.png"
+      src="docs/images/03-renumeracion-terminado.jpg"
       alt="Vista previa de renumeración de archivos"
       width="550"
     >
