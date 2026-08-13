@@ -20,6 +20,7 @@ Private ArchivosNuevos() As String
 Private ArchivosTemporales() As String
 Private VistaPreviaGenerada As Boolean
 
+
 Private Sub UserForm_Initialize()
     If Not CarpetaExiste(CARPETA_TRABAJO) Then
         MsgBox "No existe la carpeta de trabajo:" & vbCrLf & _
@@ -161,7 +162,7 @@ Private Function NumeroInicialValido(ByRef Numero As Long) As Boolean
     Texto = Trim$(txtNumero.Text)
 
     If Len(Texto) = 0 Or Not IsNumeric(Texto) Then
-        MsgBox "Introduzca un nÃºmero inicial vÃ¡lido.", vbExclamation, "Dato incorrecto"
+        MsgBox "Introduzca un número inicial válido.", vbExclamation, "Dato incorrecto"
         txtNumero.SetFocus
         Exit Function
     End If
@@ -169,7 +170,7 @@ Private Function NumeroInicialValido(ByRef Numero As Long) As Boolean
     Valor = CDbl(Texto)
 
     If Valor < 0 Or Valor > 2147483647# Or Valor <> Fix(Valor) Then
-        MsgBox "El nÃºmero inicial debe ser un entero entre 0 y 2147483647.", _
+        MsgBox "El número inicial debe ser un entero entre 0 y 2147483647.", _
                vbExclamation, "Dato incorrecto"
         txtNumero.SetFocus
         Exit Function
@@ -186,7 +187,7 @@ Private Function TextoValido(ByVal Texto As String) As Boolean
     Texto = Trim$(Texto)
 
     If Len(Texto) = 0 Then
-        MsgBox "Introduzca el texto que desea aÃ±adir.", vbExclamation, "Dato incorrecto"
+        MsgBox "Introduzca el texto que desea añadir.", vbExclamation, "Dato incorrecto"
         txtTexto.SetFocus
         Exit Function
     End If
@@ -195,7 +196,7 @@ Private Function TextoValido(ByVal Texto As String) As Boolean
 
     For Each Caracter In CaracteresProhibidos
         If InStr(1, Texto, CStr(Caracter), vbBinaryCompare) > 0 Then
-            MsgBox "El texto contiene un carÃ¡cter no permitido: " & CStr(Caracter), _
+            MsgBox "El texto contiene un carácter no permitido: " & CStr(Caracter), _
                    vbExclamation, "Dato incorrecto"
             txtTexto.SetFocus
             Exit Function
@@ -276,7 +277,7 @@ Private Function InformeHuecos(ByRef Archivos() As String) As String
     Next i
 
     If TotalFaltantes > 30 Then
-        Informe = Informe & " ... (" & TotalFaltantes & " nÃºmeros ausentes)"
+        Informe = Informe & " ... (" & TotalFaltantes & " números ausentes)"
     End If
 
     InformeHuecos = Informe
@@ -300,15 +301,15 @@ Private Function ValidarDestinos(ByRef Originales() As String, _
 
     For i = LBound(Nuevos) To UBound(Nuevos)
         If Not NombreWindowsValido(Nuevos(i)) Then
-            MsgBox "El nombre resultante no es vÃ¡lido:" & vbCrLf & Nuevos(i), _
-                   vbCritical, "Nombre no vÃ¡lido"
+            MsgBox "El nombre resultante no es válido:" & vbCrLf & Nuevos(i), _
+                   vbCritical, "Nombre no válido"
             Exit Function
         End If
 
         Clave = Nuevos(i)
 
         If Destinos.Exists(Clave) Then
-            MsgBox "Dos archivos producirÃ­an el mismo nombre:" & vbCrLf & Clave, _
+            MsgBox "Dos archivos producirían el mismo nombre:" & vbCrLf & Clave, _
                    vbCritical, "Nombre duplicado"
             Exit Function
         End If
@@ -356,14 +357,14 @@ Private Sub cmdVistaPrevia_Click()
 
     If Coleccion.Count = 0 Then
         MsgBox "No existen archivos en la carpeta de trabajo.", _
-               vbInformation, "Carpeta vacÃ­a"
+               vbInformation, "Carpeta vacía"
         Exit Sub
     End If
 
     If optNumerar.Value Then
         If CDbl(Numero) + CDbl(Coleccion.Count) - 1# > 2147483647# Then
-            MsgBox "El nÃºmero inicial es demasiado alto para la cantidad de archivos.", _
-                   vbExclamation, "NumeraciÃ³n fuera de rango"
+            MsgBox "El número inicial es demasiado alto para la cantidad de archivos.", _
+                   vbExclamation, "Numeración fuera de rango"
             Exit Sub
         End If
     End If
@@ -381,14 +382,14 @@ Private Sub cmdVistaPrevia_Click()
     If optNumerar.Value Then
         Huecos = InformeHuecos(Datos)
         If Len(Huecos) > 0 Then
-            MsgBox "Se han detectado nÃºmeros ausentes en la secuencia:" & vbCrLf & _
+            MsgBox "Se han detectado números ausentes en la secuencia:" & vbCrLf & _
                    Huecos & vbCrLf & vbCrLf & _
-                   "La vista previa mostrarÃ¡ la nueva numeraciÃ³n correlativa.", _
-                   vbInformation, "VerificaciÃ³n de secuencia"
+                   "La vista previa mostrará la nueva numeración correlativa.", _
+                   vbInformation, "Verificación de secuencia"
         Else
-            MsgBox "No se han detectado saltos en los nombres numÃ©ricos analizados." & _
-                   vbCrLf & "La vista previa mostrarÃ¡ la nueva numeraciÃ³n.", _
-                   vbInformation, "VerificaciÃ³n de secuencia"
+            MsgBox "No se han detectado saltos en los nombres numéricos analizados." & _
+                   vbCrLf & "La vista previa mostrará la nueva numeración.", _
+                   vbInformation, "Verificación de secuencia"
         End If
     End If
 
@@ -397,7 +398,7 @@ Private Sub cmdVistaPrevia_Click()
 
         If Not SepararNombre(Datos(i), NombreBase, Extension) Then
             MsgBox "No se pudo interpretar el archivo:" & vbCrLf & Datos(i), _
-                   vbCritical, "Nombre no vÃ¡lido"
+                   vbCritical, "Nombre no válido"
             InvalidarVistaPrevia
             Exit Sub
         End If
@@ -474,8 +475,8 @@ Private Sub cmdEjecutar_Click()
     Next i
 
     Respuesta = MsgBox( _
-        "Se cambiarÃ¡n " & CStr(UBound(ArchivosOriginales)) & " archivos." & vbCrLf & _
-        "Â¿Desea continuar?", _
+        "Se cambiarán " & CStr(UBound(ArchivosOriginales)) & " archivos." & vbCrLf & _
+        "¿Desea continuar?", _
         vbQuestion Or vbYesNo Or vbDefaultButton2, _
         "Confirmar cambios")
 
@@ -485,7 +486,7 @@ Private Sub cmdEjecutar_Click()
 
     On Error GoTo ControlError
 
-    ' Fase 1: todos los originales pasan a nombres temporales Ãºnicos.
+    ' Fase 1: todos los originales pasan a nombres temporales únicos.
     For i = LBound(ArchivosOriginales) To UBound(ArchivosOriginales)
         Name CARPETA_TRABAJO & ArchivosOriginales(i) As _
              CARPETA_TRABAJO & ArchivosTemporales(i)
@@ -518,7 +519,7 @@ ControlError:
         End If
     Next i
 
-    ' Todos los temporales vuelven despuÃ©s a sus nombres originales.
+    ' Todos los temporales vuelven después a sus nombres originales.
     For i = Fase1Completada To 1 Step -1
         If ArchivoExiste(CARPETA_TRABAJO & ArchivosTemporales(i)) Then
             Name CARPETA_TRABAJO & ArchivosTemporales(i) As _

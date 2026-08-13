@@ -1,4 +1,4 @@
-Attribute VB_Name = "MÃ³dulo1"
+Attribute VB_Name = "Módulo1"
 Option Explicit
 
 Sub RenombradorArchivos()
