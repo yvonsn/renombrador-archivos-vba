@@ -68,12 +68,12 @@ Después: 10122_Paco_de_Lucia_Bilbao.jpg
 Corrige nombres escritos completamente en mayúsculas, en minúsculas o con una combinación irregular, aplicando un criterio uniforme de capitalización.
 
 ```text
-10122_PACO_DE_LUCIA_BILBAO.jpg
+10122-PACO-DE-LUCIA_BILBAO.jpg
 10122_paco_de_lucia_bilbao.jpg
 10122_PaCo_de_LuCia_BILBAO.jpg
 
 Resultado normalizado:
-10122_Paco_de_Lucia_Bilbao.jpg
+10122-Paco-de-Lucia-Bilbao.jpg
 ```
 
 <p align="center">
