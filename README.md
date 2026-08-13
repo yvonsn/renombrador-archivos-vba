@@ -48,7 +48,7 @@ Permite añadir un texto descriptivo después del identificador numérico de cad
 
 ```text
 Antes:   10122.jpg
-Después: 10122_Paco_de_Lucia_Bilbao.jpg
+Después: 10122-Paco de Lucia Bilbao.jpg
 ```
 
 <p align="center">
